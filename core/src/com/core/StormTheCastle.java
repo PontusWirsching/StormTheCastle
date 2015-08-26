@@ -4,8 +4,6 @@ import com.badlogic.gdx.ApplicationListener;
 
 public class StormTheCastle implements ApplicationListener {
 
-	// This is me commenting from the github website!
-
 	@Override
 	public void create() {
 		
