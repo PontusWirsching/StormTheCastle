@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.core.Config;
 
 /**
+ * 
  * A screen is an object that holds the basic components for <br>
  * a game to work. <br>
  * These objects are for example a camera, a sprite batch. <br>
