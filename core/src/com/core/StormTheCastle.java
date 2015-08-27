@@ -3,6 +3,8 @@ package com.core;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
+import com.core.game.Game;
+import com.core.graphics.ScreenManager;
 
 /**
  * Storm The Castle main game file. <br>
@@ -24,11 +26,17 @@ public class StormTheCastle implements ApplicationListener {
 	@Override
 	public void create() {
 		
+		ScreenManager.addScreen(new Game("GAME"));
+		
+		
+		
+		ScreenManager.setScreen("GAME");
+		
 	}
 
 	@Override
 	public void resize(int width, int height) {
-		
+		ScreenManager.resize(width, height);
 	}
 
 	@Override
@@ -36,6 +44,7 @@ public class StormTheCastle implements ApplicationListener {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
+		ScreenManager.render();
 		
 		
 	}
