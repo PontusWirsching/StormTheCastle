@@ -16,8 +16,13 @@ import com.core.resources.Textures;
  */
 public class Game extends Screen {
 
+	Level currentLevel;
 	public Game(String name) {
 		super(name);
+		
+		//TODO MM : Find a better place to move this.
+		currentLevel = new Level();
+		currentLevel.AddBackground(Textures.level1);
 	}
 	
 	@Override
@@ -26,9 +31,7 @@ public class Game extends Screen {
 		
 		sb.begin();
 		{
-
-			sb.draw(Textures.level1, -Textures.level1.getWidth() / 2, -Textures.level1.getHeight() / 2);
-			
+			currentLevel.Draw(sb);
 		}
 		sb.end();
 		
