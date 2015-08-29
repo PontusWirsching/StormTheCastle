@@ -7,7 +7,6 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.core.Config;
 
 /**
- * 
  * A screen is an object that holds the basic components for <br>
  * a game to work. <br>
  * These objects are for example a camera, a sprite batch. <br>
@@ -18,10 +17,10 @@ import com.core.Config;
 public class Screen {
 
 	private OrthographicCamera camera;
-	
+
 	public SpriteBatch sb;
 	public ShapeRenderer sr;
-	
+
 	private String name = "undefined";
 
 	public Screen(String name) {
@@ -29,30 +28,39 @@ public class Screen {
 		sb = new SpriteBatch();
 		sr = new ShapeRenderer();
 		resize(0, 0);
-		
-	}
-	
-	public void render(float delta) {
-		camera.update();		
 
-		
+	}
+
+	public void render(float delta) {
+		camera.update();
+
 		sb.setProjectionMatrix(camera.combined);
 		sr.setProjectionMatrix(camera.combined);
-		
+
 	}
 
 	public void resize(int width, int height) {
 		float w = Gdx.graphics.getWidth(); // Real screen width.
 		float h = Gdx.graphics.getHeight(); // Real screen height.
-		
-		//Initialize camera.
-		camera = new OrthographicCamera(Config.HEIGHT * (w / h), Config.HEIGHT);
+
+		float mapRatio = ((float) Config.WIDTH / (float) Config.HEIGHT);
+		float ratio = w / h;
+
+		System.out.println(ratio + ", " + mapRatio);
+		// Initialize camera.
+
+		if (ratio < mapRatio) {
+			camera = new OrthographicCamera((int) Config.WIDTH, (int) (Config.WIDTH * (h / w)));
+		} else {
+			camera = new OrthographicCamera((int) (Config.HEIGHT * (w / h)), (int) (Config.HEIGHT));
+		}
+
 	}
-	
+
 	public OrthographicCamera getCamera() {
 		return camera;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -60,5 +68,5 @@ public class Screen {
 	public String getName() {
 		return name;
 	}
-	
+
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="39" height="22" tilewidth="32" tileheight="32" nextobjectid="7">
+ <tileset firstgid="1" name="Storm_Environment" tilewidth="32" tileheight="32">
+  <image source="Storm_Environment.png" width="768" height="576"/>
+ </tileset>
+ <layer name="Ground1" width="39" height="22">
+  <data encoding="base64" compression="zlib">
+   eJzNltsNwjAMRdMNYJ2KIYApoFMAc7BEt8gYwBb8YaRaWJZdO4+WfBwJ4qS5sq/djiGE8c/cgRNwJgwN6HoCL+ACXAm3yvdsuvy89RN74DCxdp4k/VQbrW3pc3NzxWvq1fYuWPPEeFzL205g2/1+R7YWlX2UaMT42T7k1fRh/PecsWI0b1+wV5f0uDfOtSEp91sekvZ5zmjaJE9ocA9FYQ/3muRdjqQrNW8e70hrVqxGTWt4kK/hfKPvg6NT29xco/ekzjp6lr/rh+DzmzXXpHnFfWX5lM811FbirRzPSXEtb6X+qXEee4F+Hy3dCx6kXsB+WDNvGq1+97asDWvaojbMG+0F7IcPbxj+mw==
+  </data>
+ </layer>
+ <layer name="Ground2" width="39" height="22">
+  <data encoding="base64" compression="zlib">
+   eJzt0jENAAAIwDD8O8AtFkjgIbTn7kUAF+WgwZbuXz4E4JsCs4cC/g==
+  </data>
+ </layer>
+ <layer name="Destructable Environment" width="39" height="22">
+  <data encoding="base64" compression="zlib">
+   eJzt0qENACAQQ9HeWMAUwP67UEmCQxyI/5L6LyoBeUpI1WvxuuTU3TS8+WEb7vE5ZOFrAIDdAsSaBP8=
+  </data>
+ </layer>
+ <layer name="DooDads" width="39" height="22">
+  <data encoding="base64" compression="zlib">
+   eJzFVtsNwjAMbL95VGIGYAxgCFqYgkHZARiCxwdfJBKRjDk7dhvESRFtcGzXd3FSVf/H898JFMa81t8R7mE8yPs1jFvBnDhQTlLMSbCdEvtReB7X3/b0GyycrojPXI1STBRLs2/ea/g35NAabVHe3lhD4dk/M5IXXXd0rEPolP9TjdaOmiRtJR6lmp7CONvdVlthb+7C7yaMZf05H8G1xrWI8u4LSXfSvEdrKO8crx5oGpI0mtOdhtQ/OsAZBZrnc4ljjdsIj94kznjsi2LTKNrP9UAN0j4ohV/1QI9eLNq2+Is6Sxo7KFrivWQhaIyilN5o/81x2ZJ8ky3lC+VJ+1rD/Es1RLXikM4E610kIlfDvog87oFfSzxpbw49HyRukV9PDSPod1nvFOiuazkv6ZxWkyE9DsHblzSukS9pL7wAAy5J3A==
+  </data>
+ </layer>
+ <layer name="Above Player" width="39" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjGTwGYi/APFXIP42wG4ZBcMfwNLbKBgF5AJ7RuLVjqa3UTAKRsFAAgDPfQfh
+  </data>
+ </layer>
+</map>
