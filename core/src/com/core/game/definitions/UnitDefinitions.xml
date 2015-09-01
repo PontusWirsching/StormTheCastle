@@ -1,0 +1,5 @@
+<UnitDefinitions>
+    <Unit texture="Goblin" location="textures/units/playerunits/goblin.png" rows=0 columns=0></Unit>
+    <Unit texture="KoboldRunner" location="textures/units/playerunits/goblin.png" width=0 height=0></Unit>
+    <Unit texture="KoboldSapper" location="textures/units/playerunits/goblin.png" width=0 height=0></Unit>
+</UnitDefinitions>
