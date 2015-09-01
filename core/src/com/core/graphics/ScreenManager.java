@@ -14,7 +14,7 @@ import com.badlogic.gdx.Gdx;
 public class ScreenManager {
 
 	/**
-	 * An ArrayList that holds all added levels.
+	 * An ArrayList that holds all added screens.
 	 */
 	public static ArrayList<Screen> screens = new ArrayList<Screen>();
 	
