@@ -1,0 +1,16 @@
+<UnitDefinitions>
+    <!-- Player Units -->
+    <Unit type="Goblin" texture="textures/units/playerunits/goblin.png"></Unit>
+    <Unit type="KoboldRunner" texture="textures/units/playerunits/KoboldRunner.png"></Unit>
+    <Unit type="KoboldSapper" texture="textures/units/playerunits/KoboldSapper.png"></Unit>
+    <Unit type="MossGolem" texture="textures/units/playerunits/MossGolem.png"></Unit>
+    <Unit type="OrcSpearThrower" texture="textures/units/playerunits/OrcSpearThrower.png"></Unit>
+    <Unit type="RockQuery" texture="textures/units/playerunits/RockQuery.png"></Unit>
+    <Unit type="ThunderDrake" texture="textures/units/playerunits/ThunderDrake.png"></Unit>
+    <!-- Enemy Units -->
+    <Unit type="BlazitMage" texture="textures/units/enemyunits/KoboldSapper.png"></Unit>
+    <Unit type="Cannoneer" texture="textures/units/enemyunits/Cannoneer.png"></Unit>
+    <Unit type="DwarvenKnight" texture="textures/units/enemyunits/DwarvenKnight.png"></Unit>
+    <Unit type="ElvenArcher" texture="textures/units/enemyunits/ElvenArcher.png"></Unit>
+    <Unit type="TimberMech" texture="textures/units/enemyunits/TimberMech.png"></Unit>
+</UnitDefinitions>

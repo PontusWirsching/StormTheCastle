@@ -1,7 +1,9 @@
 package com.core.game;
 
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.core.game.level.Level;
 import com.core.game.level.LevelHandler;
+import com.core.game.types.EntityKeys;
 import com.core.graphics.Screen;
 
 /**
@@ -16,14 +18,15 @@ import com.core.graphics.Screen;
  *
  */
 public class Game extends Screen {
-
-	public Game(String name) {
+	
+	public Game(String name){
 		super(name);
 		
 		LevelHandler.addLevel(new Level("level_01"));
 		
 		LevelHandler.setLevel("level_01");
 		
+		Sprite testSprite = new Entity(EntityKeys.PlayerUnits.Goblin);
 	}
 	
 	@Override
