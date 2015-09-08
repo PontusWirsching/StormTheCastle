@@ -46,14 +46,12 @@ public class Screen {
 		float mapRatio = ((float) Config.WIDTH / (float) Config.HEIGHT);
 		float ratio = w / h;
 
-		System.out.println(ratio + ", " + mapRatio);
-		// Initialize camera.
-
-		if (ratio < mapRatio) {
-			camera = new OrthographicCamera((int) Config.WIDTH, (int) (Config.WIDTH * (h / w)));
-		} else {
-			camera = new OrthographicCamera((int) (Config.HEIGHT * (w / h)), (int) (Config.HEIGHT));
-		}
+		// if (ratio < mapRatio) {
+		// camera = new OrthographicCamera((int) Config.WIDTH, (int)
+		// (Config.WIDTH * (h / w)));
+		// } else {
+		camera = new OrthographicCamera((int) (Config.HEIGHT * (w / h)), (int) (Config.HEIGHT));
+		// }
 
 	}
 

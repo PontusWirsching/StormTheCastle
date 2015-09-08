@@ -4,7 +4,9 @@ import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.core.game.Game;
+import com.core.game.Menu;
 import com.core.graphics.ScreenManager;
+import com.core.resources.Resources;
 
 /**
  * Storm The Castle main game file. <br>
@@ -27,10 +29,12 @@ public class StormTheCastle implements ApplicationListener {
 	public void create() {
 		
 		ScreenManager.addScreen(new Game("GAME"));
+		ScreenManager.addScreen(new Menu("MENU"));
 		
+		Resources.load("textures/buttons");
 		
+		ScreenManager.setScreen("MENU");
 		
-		ScreenManager.setScreen("GAME");
 		
 	}
 

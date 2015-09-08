@@ -1,0 +1,19 @@
+<SpriteSheet>
+
+	<!-- Exit Button -->
+	<Sprite name="gui:button:exit:nopress" x="0" y="0" width="314" height="85"></Sprite>
+	<Sprite name="gui:button:exit:press" x="0" y="85" width="314" height="85"></Sprite>
+
+	<!-- Options Button -->
+	<Sprite name="gui:button:options:nopress" x="0" y="170" width="314" height="85"></Sprite>
+	<Sprite name="gui:button:options:press" x="0" y="255" width="314" height="85"></Sprite>
+
+	<!-- Play Button -->
+	<Sprite name="gui:button:play:nopress" x="0" y="340" width="314" height="85"></Sprite>
+	<Sprite name="gui:button:play:press" x="0" y="425" width="314" height="85"></Sprite>
+
+	<!-- Credits Button -->
+	<Sprite name="gui:button:credits:nopress" x="0" y="510" width="314" height="85"></Sprite>
+	<Sprite name="gui:button:credits:press" x="0" y="595" width="314" height="85"></Sprite>
+
+</SpriteSheet>
