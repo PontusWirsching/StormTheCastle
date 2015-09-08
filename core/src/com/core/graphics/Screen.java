@@ -16,7 +16,7 @@ import com.core.Config;
  */
 public class Screen {
 
-	private OrthographicCamera camera;
+	protected OrthographicCamera camera;
 
 	public SpriteBatch sb;
 	public ShapeRenderer sr;
@@ -43,9 +43,8 @@ public class Screen {
 		float w = Gdx.graphics.getWidth(); // Real screen width.
 		float h = Gdx.graphics.getHeight(); // Real screen height.
 
-		float mapRatio = ((float) Config.WIDTH / (float) Config.HEIGHT);
-		float ratio = w / h;
-
+		// float mapRatio = ((float) Config.WIDTH / (float) Config.HEIGHT);
+		// float ratio = w / h;
 		// if (ratio < mapRatio) {
 		// camera = new OrthographicCamera((int) Config.WIDTH, (int)
 		// (Config.WIDTH * (h / w)));

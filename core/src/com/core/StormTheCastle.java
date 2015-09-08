@@ -33,7 +33,7 @@ public class StormTheCastle implements ApplicationListener {
 		
 		Resources.load("textures/buttons");
 		
-		ScreenManager.setScreen("MENU");
+		ScreenManager.setScreen("GAME");
 		
 		
 	}
